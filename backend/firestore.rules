@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // The prototype uses Admin SDK code only. Never expose account, corpus, or quota data to clients.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

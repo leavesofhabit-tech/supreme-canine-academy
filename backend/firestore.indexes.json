@@ -1,0 +1,25 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "academyTrainingChunksDev",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "corpusKey", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "productionEligible", "order": "ASCENDING" },
+        { "fieldPath": "rightsStatus", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "academyTrainingChunksProd",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "corpusKey", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "productionEligible", "order": "ASCENDING" },
+        { "fieldPath": "rightsStatus", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Supreme Canine Academy Knowledge Library",
+  "short_name": "Supreme Canine",
+  "description": "Clear training steps and dog-care guides. Choose a skill and find your next step in the review library.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f6f0",
+  "theme_color": "#203f37",
+  "icons": [
+    { "src": "/icons/academy-canine-2026.png", "sizes": "1254x1254", "type": "image/png", "purpose": "any" }
+  ]
+}

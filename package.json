@@ -1,0 +1,28 @@
+{
+  "name": "supreme-canine-academy-web-review",
+  "version": "0.2.6",
+  "private": true,
+  "description": "A free, community-improved dog-training and care review library with source-grounded local search.",
+  "license": "MIT",
+  "engines": { "node": ">=22.4.0" },
+  "homepage": "https://supreme-canine-academy.web.app/",
+  "repository": { "type": "git", "url": "https://github.com/leavesofhabit-tech/supreme-canine-academy.git" },
+  "bugs": { "url": "https://github.com/leavesofhabit-tech/supreme-canine-academy/issues" },
+  "type": "module",
+  "scripts": {
+    "prepare:data": "node scripts/prepare-data.mjs",
+    "dev": "npm run build && node server.mjs --dist",
+    "build": "npm run prepare:data && node scripts/build.mjs",
+    "preview": "node server.mjs --dist",
+    "smoke:browser": "node scripts/smoke-browser.mjs",
+    "release:package": "node scripts/package-release.mjs",
+    "test": "npm run prepare:data && node --test tests/*.test.mjs backend/tests/*.test.mjs",
+    "test:backend": "node --test backend/tests/*.test.mjs"
+  },
+  "dependencies": {
+    "firebase": "12.15.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

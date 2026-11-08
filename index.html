@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#203f37" />
+    <meta name="description" content="Find clear training steps and dog-care guidance in the Supreme Canine Academy library." />
+    <meta name="application-name" content="Supreme Canine Academy" />
+    <link rel="canonical" href="https://supreme-canine-academy.web.app/" />
+    <script id="academy-structured-data" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://supreme-canine-academy.web.app/#organization",
+          "name": "Supreme Canine Academy",
+          "url": "https://supreme-canine-academy.web.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://supreme-canine-academy.web.app/icons/academy-canine-2026.png",
+            "contentUrl": "https://supreme-canine-academy.web.app/icons/academy-canine-2026.png",
+            "width": 1254,
+            "height": 1254
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://supreme-canine-academy.web.app/#website",
+          "url": "https://supreme-canine-academy.web.app/",
+          "name": "Supreme Canine Academy",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://supreme-canine-academy.web.app/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://supreme-canine-academy.web.app/#webpage",
+          "url": "https://supreme-canine-academy.web.app/",
+          "name": "Supreme Canine Academy · Knowledge Library",
+          "description": "Find clear training steps and dog-care guidance in the Supreme Canine Academy library.",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "isPartOf": { "@id": "https://supreme-canine-academy.web.app/#website" },
+          "mainEntity": { "@id": "https://supreme-canine-academy.web.app/#application" }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://supreme-canine-academy.web.app/#application",
+          "url": "https://supreme-canine-academy.web.app/",
+          "name": "Supreme Canine Academy",
+          "description": "A public review library of dog-training lessons and dog-care guides, with local dog profiles and no sign-in required.",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Any",
+          "browserRequirements": "Requires JavaScript and a modern web browser.",
+          "inLanguage": "en",
+          "isAccessibleForFree": true,
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "USD",
+            "url": "https://supreme-canine-academy.web.app/"
+          },
+          "publisher": { "@id": "https://supreme-canine-academy.web.app/#organization" },
+          "mainEntityOfPage": { "@id": "https://supreme-canine-academy.web.app/#webpage" }
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" href="/icons/academy-canine-2026.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/icons/academy-canine-2026.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Supreme Canine Academy · Knowledge Library</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#page-title">Skip to guidance</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Supreme Canine Academy home">
+        <img class="brand-mark" src="/icons/academy-canine-2026.png" alt="" width="46" height="46" />
+        <span class="brand-text"><strong>Supreme Canine Academy</strong><small>Training &amp; care</small></span>
+      </a>
+      <div class="header-actions">
+        <span id="model-status" class="visually-hidden" role="status">Opening the library</span>
+        <button id="manage-dogs" class="button button-quiet" type="button">My dogs</button>
+        <button id="account-open" class="button button-quiet" type="button" hidden>Sign in <span id="account-label">optional</span></button>
+      </div>
+    </header>
+
+    <div class="review-banner">
+      <span><strong>Review edition</strong><span class="review-banner-copy"> · Training and care drafts</span></span>
+      <button id="review-info" class="banner-link" type="button">About this content</button>
+    </div>
+
+    <main class="app-shell">
+      <div id="app-update" class="app-notice" role="status" hidden>
+        <p>A new version is ready. Reload when you’re ready.</p>
+        <button id="reload-update" class="button button-secondary" type="button">Reload update</button>
+      </div>
+      <p id="offline-status" class="connection-notice" role="status" hidden>You’re offline. You can still use this open library.</p>
+      <nav class="workspace-nav" aria-label="Main workspace">
+        <button id="show-ask-view" class="workspace-nav-button" type="button" aria-pressed="true" aria-controls="ask-view">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5.75A2.75 2.75 0 0 1 7.75 3h8.5A2.75 2.75 0 0 1 19 5.75v5.5A2.75 2.75 0 0 1 16.25 14H11l-4.75 4v-4.2A2.75 2.75 0 0 1 5 11.5z" /></svg>
+          <span>Start</span>
+        </button>
+        <button id="show-library-view" class="workspace-nav-button" type="button" aria-pressed="false" aria-controls="library-view">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.75A1.75 1.75 0 0 1 6.75 3H20v16H6.75A1.75 1.75 0 0 0 5 20.75zM5 4.75v16M8 7h8M8 10.5h8M8 14h5" /></svg>
+          <span>Library</span><span id="library-nav-count" class="nav-count">67</span>
+        </button>
+      </nav>
+
+      <p id="profile-feedback" class="profile-feedback" role="status" hidden></p>
+
+      <section id="ask-view" class="app-view" aria-labelledby="page-title">
+        <section class="welcome-row simple-intro">
+          <div>
+            <p class="eyebrow">ONE CLEAR NEXT STEP</p>
+            <h1 id="page-title" tabindex="-1">What would you like help with?</h1>
+            <p class="intro-copy">Choose a skill or tell us what you need. Start at your dog’s pace.</p>
+          </div>
+        </section>
+        <div class="home-stack">
+          <section class="assistant-pane composer-pane" aria-label="Find guidance">
+            <form id="question-form" class="question-form" aria-describedby="question-privacy-copy">
+              <label class="question-label" for="question">Your question or skill</label>
+              <textarea id="question" rows="2" maxlength="600" placeholder="For example: How do I teach my dog to respond to their name?" required></textarea>
+              <label id="cloud-consent-row" class="cloud-consent-row" hidden>
+                <input id="cloud-consent" type="checkbox" />
+                <span>Use the hosted Academy service for this question. Only the question is sent; dog profiles, session settings, and chat history stay here.</span>
+              </label>
+              <div class="composer-footer">
+                <button id="search-button" class="button button-primary" type="submit">Find guidance <span aria-hidden="true">→</span></button>
+                <p id="question-privacy-copy">Your question stays in this tab.</p>
+              </div>
+            </form>
+            <details id="session-options" class="session-options">
+              <summary><span>Tailor this session</span><span id="session-summary" class="session-summary">Optional · 5 min</span></summary>
+              <div class="session-options-body">
+                <div class="dog-select-group">
+                  <label id="dog-heading" for="dog-select">Dog for this session</label>
+                  <select id="dog-select" class="field" aria-describedby="dog-context"><option value="">No dog selected</option></select>
+                  <p id="dog-context" class="dog-context">A profile is optional. You can start with the library.</p>
+                </div>
+                <div class="session-fields">
+                  <div><label for="experience">Experience</label><select id="experience" class="field"><option>New to this skill</option><option>Practicing the basics</option><option>Comfortable in this setting</option></select></div>
+                  <div><label for="minutes">Planned time</label><select id="minutes" class="field"><option value="3">3 minutes</option><option value="5" selected>5 minutes</option><option value="8">8 minutes</option></select></div>
+                  <div><label for="setting">Where you’ll practise</label><input id="setting" class="field" type="text" maxlength="80" placeholder="Optional, e.g. a quiet room" /></div>
+                </div>
+                <p class="fine-print">These are planning choices. Stop sooner if your dog is uncomfortable.</p>
+              </div>
+            </details>
+          </section>
+          <div id="error-message" class="inline-error" role="alert" hidden></div>
+          <section id="quick-starts" class="quick-starts" aria-labelledby="quick-start-title">
+            <div class="section-heading-row"><h2 id="quick-start-title">Start with a skill</h2><button id="open-library-from-lessons" class="text-button" type="button">Browse all <span aria-hidden="true">→</span></button></div>
+            <div class="starter-grid">
+              <button class="suggestion starter-card" data-question="How do I begin name-response practice?" type="button"><span class="starter-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3"/></svg></span><span><strong>Name response</strong><small>Build your dog’s attention</small></span><span class="starter-arrow" aria-hidden="true">↗</span></button>
+              <button class="suggestion starter-card" data-question="How can I begin touch: voluntary nose-to-hand targeting?" type="button"><span class="starter-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 12V5a2 2 0 0 1 4 0v7m0-5a2 2 0 0 1 4 0v6m0-3a2 2 0 0 1 4 0v5c0 4-3 6-7 6-3 0-5-2-6-4l-3-5a2 2 0 0 1 3-2l1 2"/></svg></span><span><strong>Hand target</strong><small>Explore a voluntary nose touch</small></span><span class="starter-arrow" aria-hidden="true">↗</span></button>
+              <button class="suggestion starter-card" data-question="How can I begin mat station entry?" type="button"><span class="starter-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 8 9-4 9 4v9l-9 4-9-4zM3 8l9 4 9-4m-9 4v9M7 6l10 5"/></svg></span><span><strong>Settle on a mat</strong><small>Begin with a comfortable spot</small></span><span class="starter-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </section>
+          <div id="answer-region" class="answer-region" aria-live="polite" aria-atomic="false" hidden></div>
+        </div>
+      </section>
+
+      <section id="library-view" class="app-view library-view" aria-labelledby="library-title" hidden>
+        <header class="library-heading">
+          <p class="eyebrow">FIND YOUR NEXT STEP</p>
+          <h1 id="library-title" tabindex="-1">Your training &amp; care library</h1>
+          <p class="intro-copy">Pick a topic. Open a lesson or guide. Go at your dog’s pace.</p>
+        </header>
+        <section class="library-toolbar" aria-label="Filter knowledge entries">
+          <div class="library-search-group">
+            <label for="library-search">Find a lesson or guide</label>
+            <div class="search-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.3" /><path d="m15.5 15.5 4.2 4.2" /></svg>
+              <input id="library-search" class="field" type="search" placeholder="Try name response, puppy care, feeding…" autocomplete="off" />
+            </div>
+          </div>
+          <div class="library-filter-group">
+            <span id="library-filter-label" class="filter-label">Browse by</span>
+            <div class="library-filters" role="group" aria-labelledby="library-filter-label">
+              <button class="filter-button" data-library-filter="all" type="button" aria-pressed="true">All</button>
+              <button class="filter-button" data-library-filter="training" type="button" aria-pressed="false">Training</button>
+              <button class="filter-button" data-library-filter="reference" type="button" aria-pressed="false">Care &amp; triage</button>
+            </div>
+          </div>
+          <button id="library-clear-filters" class="text-button clear-filters" type="button" hidden>Clear filters</button>
+        </section>
+        <div class="library-results-header">
+          <p id="library-count" role="status" aria-live="polite">Loading entries</p>
+          <p class="library-review-note">Review drafts · read the source and safety notes</p>
+        </div>
+        <div id="library-results" class="library-grid" aria-describedby="library-count"></div>
+        <section id="library-empty" class="library-empty" aria-live="polite" hidden>
+          <span class="empty-mark" aria-hidden="true">⌕</span>
+          <h2>No entries found</h2>
+          <p>Try a shorter phrase or clear the filters to browse the full review collection.</p>
+          <button class="button button-secondary" data-clear-library-filters type="button">Clear filters</button>
+        </section>
+      </section>
+
+      <footer class="privacy-footer">
+        <div><strong>Made for a little practice.</strong> Free to use in a modern browser. Your dog profiles stay on this device.</div>
+        <button id="privacy-open" class="text-button" type="button">Privacy &amp; safety</button>
+      </footer>
+    </main>
+
+    <dialog id="dogs-dialog" class="dialog" aria-labelledby="dogs-title">
+      <div class="dialog-header"><div><p class="eyebrow">ON THIS DEVICE</p><h2 id="dogs-title">Dog profiles</h2></div><button class="icon-button" data-close="dogs-dialog" type="button" aria-label="Close dog profiles">Close</button></div>
+      <p class="dialog-copy">Add only details that help shape a training session. These profiles stay in this browser and are not sent to an account or cloud service.</p>
+      <div id="saved-dogs" class="saved-dogs"></div>
+      <form id="dog-form" class="dog-form">
+        <input id="dog-id" type="hidden" />
+        <h3 id="dog-form-title">Add a dog</h3>
+        <label for="dog-name">Name <span aria-hidden="true">*</span></label><input id="dog-name" class="field" required maxlength="40" autocomplete="off" />
+        <details id="dog-more" class="optional-profile"><summary>More about your dog <span>Optional</span></summary><div class="optional-profile-fields">
+        <div class="form-grid"><div><label for="dog-age">Age or life stage</label><input id="dog-age" class="field" maxlength="40" placeholder="Optional" /></div><div><label for="dog-breed">Breed or mix</label><input id="dog-breed" class="field" maxlength="60" placeholder="Optional" /></div></div>
+        <label for="dog-goals">Training goals or skills</label><textarea id="dog-goals" class="field" rows="2" maxlength="240" placeholder="Use your own words; do not enter a diagnosis or medication details."></textarea>
+        <label for="dog-setting">Routine or practice setting</label><input id="dog-setting" class="field" maxlength="120" placeholder="Optional" />
+        <label for="dog-comfort">Comfort preferences</label><input id="dog-comfort" class="field" maxlength="120" placeholder="Optional" />
+        </div></details>
+        <p class="fine-print">Do not enter customer/client information, diagnoses, medication doses, or safety-sensitive details.</p>
+        <div class="dialog-actions"><button id="dog-cancel" class="button button-quiet" type="button">Cancel</button><button class="button button-primary" type="submit">Save profile</button></div>
+      </form>
+      <div id="dog-data-error" class="inline-error" role="alert" hidden></div>
+    </dialog>
+
+    <dialog id="source-dialog" class="dialog source-dialog" aria-labelledby="source-title">
+      <div class="dialog-header"><div><p class="eyebrow">SOURCE &amp; STATUS</p><h2 id="source-title">Knowledge entry</h2></div><button class="icon-button" data-close="source-dialog" type="button" aria-label="Close source passage">Close</button></div>
+      <nav class="source-toolbar" aria-label="Lesson sections"><button id="source-overview" class="source-nav-button" type="button">Before you begin</button><button id="source-steps" class="source-nav-button" type="button" hidden>Practice steps <span aria-hidden="true">↓</span></button></nav>
+      <div id="source-content" tabindex="0" aria-label="Source text"></div>
+      <div class="source-actions"><p class="fine-print">Review draft · check setup and comfort before practising</p><button id="source-ask" class="button button-primary" type="button" hidden>Find a starting point</button></div>
+    </dialog>
+
+    <dialog id="account-dialog" class="dialog account-dialog" aria-labelledby="account-title">
+      <div class="dialog-header"><div><p class="eyebrow">OPTIONAL ACCOUNT</p><h2 id="account-title">Sign in</h2></div><button class="icon-button" data-close="account-dialog" type="button" aria-label="Close account dialog">Close</button></div>
+      <p id="auth-description" class="dialog-copy">Local review mode works without an account. Firebase Auth is not configured in this copy. No credentials are stored.</p>
+      <form id="auth-form" class="auth-form">
+        <div class="auth-mode" role="group" aria-label="Account action">
+          <button id="auth-mode-signin" class="button button-secondary" type="button" aria-pressed="true">Sign in</button>
+          <button id="auth-mode-create" class="button button-quiet" type="button" aria-pressed="false">Create account</button>
+        </div>
+        <div id="auth-username-row" hidden><label for="auth-username">Username</label><input id="auth-username" class="field" type="text" maxlength="40" autocomplete="nickname" /></div>
+        <label for="auth-email">Email</label><input id="auth-email" class="field" type="email" autocomplete="username" required />
+        <label for="auth-password">Password</label><input id="auth-password" class="field" type="password" autocomplete="current-password" required />
+        <div id="auth-confirm-row" hidden><label for="auth-password-confirm">Confirm password</label><input id="auth-password-confirm" class="field" type="password" autocomplete="new-password" /></div>
+        <div class="dialog-actions"><button class="button button-primary" type="submit" id="auth-submit" disabled>Sign in</button></div>
+      </form>
+      <div id="auth-status" class="auth-status" role="status">Sign-in is unavailable until an owner-configured Firebase Web config is supplied.</div>
+      <p class="fine-print">Email, password, and an optional username go to Firebase Auth only when you submit this form. The Firebase SDK keeps the session in memory only. Dog details and chat are not uploaded.</p>
+      <button id="auth-signout" class="text-button" type="button" hidden>Sign out</button>
+    </dialog>
+
+    <dialog id="privacy-dialog" class="dialog" aria-labelledby="privacy-title">
+      <div class="dialog-header"><div><p class="eyebrow">READ BEFORE USING</p><h2 id="privacy-title">Privacy &amp; safety</h2></div><button class="icon-button" data-close="privacy-dialog" type="button" aria-label="Close privacy and safety">Close</button></div>
+      <div class="policy-copy">
+        <h3>Local data</h3><p>Dog profiles are stored in this browser only. Questions, answers, and session setup are not stored. Sign-in is optional and disabled in the default local-review configuration. No analytics, telemetry, or model API is used.</p>
+        <h3>Optional hosted account</h3><p>When an owner configures Firebase, sign-in uses the official Firebase SDK with in-memory session persistence. Creating an account can store only username, email, pending/active access state, and creation time in the Academy account summary. It does not track questions, sessions, dogs, or sign-in activity. Hosted answers require separate consent for each question and send only the question.</p>
+        <h3>Draft content</h3><p>The 67 lesson records are review drafts; none is approved for production. A matching citation points to that draft, not to independent validation.</p>
+        <h3>Health and safety</h3><p>This tool cannot diagnose or prescribe, set medication doses, or replace a veterinarian or qualified behavior professional. Urgent signs or possible toxin exposure need urgent veterinary advice. Limited keyword routing may miss or misclassify situations.</p>
+        <h3>Training cues</h3><p>YES releases and promises a treat. GOOD maintains position; reward later. NO stops unwanted behavior. NOPE is a distinct playful retry or adjustment cue. OKAY is a general release. Positional cues hold until release or another command. This app does not infer force or correction intensity.</p>
+      </div>
+    </dialog>
+
+    <script src="/config.js"></script>
+    <script type="module" src="/app.bundle.js"></script>
+  </body>
+</html>

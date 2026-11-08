@@ -1,0 +1,50 @@
+name: Content or citation correction
+description: Suggest an evidence-based correction to a lesson, guide, or source attribution.
+title: '[Content]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The library contains review drafts. Report a correction to a specific public record and explain its supporting evidence.
+        Keep real pet, owner, client, and veterinary information private. Use brief quotations or paraphrases with citations rather than uploading copyrighted chapters or private source collections.
+
+  - type: input
+    id: record
+    attributes:
+      label: Public record ID and title
+      description: Identify each affected lesson or guide so its citation can be preserved.
+      placeholder: 'For example: PRT-000114 — Touch: voluntary nose-to-hand targeting'
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current passage or behavior
+      description: Quote only the short passage needed to locate the issue, or describe the incorrect retrieval/citation behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      description: Explain the correction, its practical effect, and any limits or uncertainty. Preserve draft status unless an actual review supports a change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting source evidence
+      description: Give the source title, author or organization, public URL or publication reference, and relevant section/page. Explain how it supports the proposed correction.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Publication check
+      options:
+        - label: This report contains no private pet or person identifiers or private records, and I have permission to share the submitted material.
+          required: true

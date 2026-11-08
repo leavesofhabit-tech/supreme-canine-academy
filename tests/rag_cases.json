@@ -1,0 +1,384 @@
+{
+  "status": "editor_authored_small_development_set_not_independent_expert_gold",
+  "frozen_original_cases": 16,
+  "new_internal_regression_cases": 30,
+  "clinical_validation": false,
+  "generated_answer_evaluation": false,
+  "cases": [
+    {
+      "id": "RET-01",
+      "query": "YES marker release position treat",
+      "relevant": [
+        "PRT-000102"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-02",
+      "query": "GOOD continuation hold position reward later",
+      "relevant": [
+        "PRT-000102"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-03",
+      "query": "NO versus NOPE playful teaching retry",
+      "relevant": [
+        "PRT-000102"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-04",
+      "query": "yes keep holding position is that correct",
+      "relevant": [
+        "PRT-000102"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-05",
+      "query": "dog collapsed breathing trouble swollen abdomen retching",
+      "relevant": [
+        "NUT-001"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-06",
+      "query": "xylitol sugar free gum ingested",
+      "relevant": [
+        "NUT-015"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-07",
+      "query": "homemade diet recipe veterinary nutrition formulation",
+      "relevant": [
+        "NUT-011"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-08",
+      "query": "supplement vitamin dose assess veterinarian",
+      "relevant": [
+        "NUT-012"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-09",
+      "query": "puppy growth large breed nutrition",
+      "relevant": [
+        "NUT-006"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-10",
+      "query": "food allergy elimination trial treats medication",
+      "relevant": [
+        "NUT-014"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-11",
+      "query": "raw foods bacterial food handling contamination",
+      "relevant": [
+        "NUT-010"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-12",
+      "query": "daily food ledger treats calories",
+      "relevant": [
+        "NUT-004"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-13",
+      "query": "senior dog weight muscle feeding individual",
+      "relevant": [
+        "NUT-007"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-14",
+      "query": "teach down elbows floor do not force",
+      "relevant": [
+        "PRT-000105"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-15",
+      "query": "station mat entry duration",
+      "relevant": [
+        "PRT-000106"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "RET-16",
+      "query": "dog seems off and tummy looks weird",
+      "relevant": [
+        "NUT-001"
+      ],
+      "suite": "frozen_original_16"
+    },
+    {
+      "id": "NEW-01",
+      "query": "What response should I reward when I say my dog’s name?",
+      "relevant": [
+        "PRT-000112"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-02",
+      "query": "How can I get my dog to come back when called in a safe area?",
+      "relevant": [
+        "PRT-000110"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-03",
+      "query": "How can I get my puppy to go toilet outside on a routine?",
+      "relevant": [
+        "PRT-000108"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-04",
+      "query": "My dog drags me along on walks. How do I reward a slack lead?",
+      "relevant": [
+        "PRT-000109"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-05",
+      "query": "How do I help my dog settle in a safe space before short absences?",
+      "relevant": [
+        "PRT-000111"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-06",
+      "query": "He jumps up when visitors come through the door. What should I teach?",
+      "relevant": [
+        "PRT-000301"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-07",
+      "query": "My dog barks at sounds in the house. How do I teach a quiet interval?",
+      "relevant": [
+        "PRT-000302"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-08",
+      "query": "My dog digs holes in the yard. How can I give that behavior an allowed outlet?",
+      "relevant": [
+        "PRT-000304"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-09",
+      "query": "A fearful dog hides from guests. How can I offer choice and a safe retreat?",
+      "relevant": [
+        "PRT-000305"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-10",
+      "query": "My dog barks and lunges at dogs on leash. What safe starting point is in the library?",
+      "relevant": [
+        "PRT-000306"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-11",
+      "query": "My dog growls when I approach the food bowl. Which lesson covers separation and help?",
+      "relevant": [
+        "PRT-000307"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-12",
+      "query": "How should I arrange a home with children and multiple dogs for safety?",
+      "relevant": [
+        "PRT-000308"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-13",
+      "query": "How do I teach the dog to lie down without pressing on the body?",
+      "relevant": [
+        "PRT-000105"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-14",
+      "query": "How do I teach a mat station, starting with entry before duration?",
+      "relevant": [
+        "PRT-000106"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-15",
+      "query": "How should I structure a brief practice with a measurable target and pauses?",
+      "relevant": [
+        "PRT-000103"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-16",
+      "query": "How do I change only one difficulty at a time and make it easier again if needed?",
+      "relevant": [
+        "PRT-000107"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-17",
+      "query": "What are the exact marker meanings for continuing and releasing a position?",
+      "relevant": [
+        "PRT-000102"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-18",
+      "query": "How do I let a dog get comfortable with a basket muzzle voluntarily?",
+      "relevant": [
+        "PRT-000206"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-19",
+      "query": "How can I prepare for nail care without cutting the nails yet?",
+      "relevant": [
+        "PRT-000205"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-20",
+      "query": "What should I consider for an older dog whose comfort and behavior have changed?",
+      "relevant": [
+        "EDU-000506"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-21",
+      "query": "My dog is retching and has a swollen belly. What should I do?",
+      "relevant": [
+        "NUT-001"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-22",
+      "query": "Can you help me make a home cooked diet recipe for my dog?",
+      "relevant": [
+        "NUT-011"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-23",
+      "query": "My dog ate sugar-free gum. Which urgent information should I read?",
+      "relevant": [
+        "NUT-015"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-24",
+      "query": "Can this library teach my dog to translate French poetry?",
+      "relevant": [],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-25",
+      "query": "My dog tries to grab food or objects from the ground; how do I teach disengagement?",
+      "relevant": [
+        "PRT-000117"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-26",
+      "query": "How can I teach my dog to trade a toy and release it cooperatively?",
+      "relevant": [
+        "PRT-000118"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-27",
+      "query": "My dog refuses to come back if another dog is nearby. What recall boundary applies?",
+      "relevant": [
+        "PRT-000110"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-28",
+      "query": "What is the difference between a focused heel and a loose leash walk?",
+      "relevant": [
+        "PRT-000116",
+        "PRT-000109"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-29",
+      "query": "My dog is acting unusual and has an upset tummy. What is safe to do?",
+      "relevant": [
+        "NUT-001"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-30",
+      "query": "How do I start introducing a harness without forcing it on?",
+      "relevant": [
+        "PRT-000203"
+      ],
+      "suite": "new_internal_regression"
+    },
+    {
+      "id": "NEW-31",
+      "query": "How should I start name response for my dog? Please tailor a brief first session to my profile.",
+      "relevant": [
+        "PRT-000112"
+      ],
+      "suite": "new_internal_regression"
+    }
+  ]
+}
