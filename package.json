@@ -22,6 +22,11 @@
   "dependencies": {
     "firebase": "12.15.0"
   },
+  "overrides": {
+    "@firebase/firestore@4.16.0": {
+      "@grpc/grpc-js": "1.13.7"
+    }
+  },
   "devDependencies": {
     "esbuild": "0.28.2"
   }

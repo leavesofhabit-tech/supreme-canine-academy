@@ -8,6 +8,14 @@ Include the affected version or commit, the relevant file or route, concise repr
 
 Security fixes target the latest `main` branch. Older snapshots may need to be updated to receive a fix.
 
+## Dependency maintenance
+
+The root manifest narrowly overrides `@firebase/firestore@4.16.0`'s `@grpc/grpc-js` dependency to `1.13.7`, a patched release for [GHSA-m9gg-hp2v-232j](https://github.com/grpc/grpc-node/security/advisories/GHSA-m9gg-hp2v-232j) and [GHSA-f596-whhp-79r4](https://github.com/grpc/grpc-node/security/advisories/GHSA-f596-whhp-79r4), including the [remaining error-disclosure fixes in 1.13.7](https://github.com/grpc/grpc-node/releases/tag/%40grpc%2Fgrpc-js%401.13.7). The Firebase umbrella package otherwise resolves an affected `~1.9.0` version. Keep the override until upstream includes a patched dependency; review it when upgrading Firebase.
+
+The current browser application imports Firebase App, Auth, App Check, and Functions. It does not import the Node Firestore/gRPC client. The override removes the known vulnerable package from contributor installs without changing that browser bundle. This override is outside Firestore's declared dependency range; if a future feature uses Node Firestore, test that integration explicitly before enabling it. It does not configure or validate the separate, disabled `backend/functions` prototype.
+
+Run `npm ci` and `npm audit --audit-level=high` before release. CI checks the root application's locked dependency tree as well as tests, build, and browser smoke. An audit is a check against currently published advisories, not a guarantee that all defects have been found.
+
 ## Relevant boundaries
 
 The default application uses the bundled review library and browser-local dog profiles. Hosted authentication and retrieval are disabled unless explicitly configured. Reports concerning script injection, unintended data transmission, profile isolation, unsafe caching, authentication/authorization bypass, or corpus-eligibility bypass are relevant to this project.
